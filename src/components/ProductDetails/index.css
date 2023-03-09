@@ -1,0 +1,120 @@
+.modal-content {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+  background-color: var(--default-black);
+  top: 0;
+}
+
+.watch-modal {
+  visibility: visible;
+}
+.unwatch-modal {
+  visibility: hidden;
+}
+
+.close-modal-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--default-white);
+  border-radius: 50%;
+  color: var(--default-black);
+  margin: 15px 25px 0 0;
+}
+
+.close-modal-icon:hover {
+  cursor: pointer;
+  background-color: var(--default-hover);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.product-information {
+  padding: 10px;
+  width: 500px;
+  text-align: left;
+  background-color: rgb(190, 223, 248);
+  color: var(--default-black);
+  font-size: 17px;
+  border-radius: 25px;
+}
+
+.boton {
+  background-color: var(--default-black);
+  font-size: 16px;
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: var(--default-hover);
+}
+.product-container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 80%;
+}
+.product-image {
+  border-radius: 20px;
+  border: 1px solid var(--default-white);
+  width: 80%;
+  height: 80%;
+}
+
+.ranting-star-icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 699px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-information {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .product-container-image {
+    width: 100%;
+    height: 100%;
+  }
+  .product-image {
+    width: 50%;
+    height: auto;
+  }
+}

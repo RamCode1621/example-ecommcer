@@ -1,0 +1,31 @@
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px 10px;
+}
+
+.imagen {
+  width: 70px;
+  height: 55px;
+}
+.remove-icon {
+  margin-top: 1.6rem;
+  width: 30px;
+  height: 25px;
+}
+.contImg {
+  margin: 15px 15px;
+}
+
+.contDesc {
+  font-weight: bold;
+  text-align: right;
+  width: 220px;
+  height: 100px;
+}
+
+.par {
+  font-size: 1rem;
+  margin: 5px 0px;
+}

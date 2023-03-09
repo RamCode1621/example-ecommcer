@@ -1,0 +1,8 @@
+.button-addtocart {
+  background-color: var(--default-hover);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--default-hover);
+}

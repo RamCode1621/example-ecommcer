@@ -1,0 +1,118 @@
+@import url("../../colors.css");
+
+.header-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: var(--default-bg);
+}
+
+.header-logo {
+  width: 230px;
+  height: 80px;
+}
+
+.header-content-navigation {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 400px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  height: 40px;
+}
+.header-navigation-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--default-white);
+  font-size: 20px;
+  background-color: var(--default-black);
+  padding: 10px 20px;
+}
+.header-navigation-link:hover {
+  background-color: var(--default-hover);
+  color: var(--default-white);
+  cursor: pointer;
+}
+.round-right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.round-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* shopping cart content */
+.shoppingCart {
+}
+.header-shopping-cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  /* background-color: red; */
+}
+.header-shopping-cart-content-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  /* background-color: var(--default-white); */
+}
+.header-shopping-cart-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--default-black); */
+}
+
+.header-shopping-cart-count {
+}
+
+.header-shopping-cart-count > strong {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* responsevi for 375px of with */
+@media (max-width: 375px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .header-content-navigation {
+    flex-direction: column;
+  }
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation-link {
+    padding: 10px 5;
+    width: 100%;
+  }
+}
+
+/* responsevi for 768px of with */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .header-content-navigation {
+    flex-direction: column;
+  }
+  .header-navigation {
+    width: 100%;
+  }
+  .header-navigation-link {
+    padding: 10px 5px;
+    width: 100%;
+  }
+}
